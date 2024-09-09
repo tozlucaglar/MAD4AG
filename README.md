@@ -6,7 +6,7 @@ This repository contains the scripts (src/) and libraries (lib/) for generating 
 
 | Step | Script/Procedure                                     | Objective                                                                                                         |
 |------|------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| 0    | `src/0-Exploratory-analysis.ipynb'                   | Perform exploratory analysis on the Mobile phone data.                                                            |
+| 0    | `src/0-Exploratory-analysis.ipynb`                   | Perform exploratory analysis on the Mobile phone data.                                                            |
 | 1    | `src/1.1-Feature-engineering-close-buildings`        | Clean and prepare the mobile phone data for further analysis.                                                     |
 |      | `src/1.2-Feature-engineering-near-buildings.ipynb`   |                                                                                                                   |
 |      | `src/1.3-Feature-engineering-close-buildings`        |                                                                                                                   |
