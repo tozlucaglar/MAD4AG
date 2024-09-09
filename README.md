@@ -1,13 +1,24 @@
 # Mobile application data for activity generation (MAD4AG)
 
-This project presents a novel methodology that generates individuals' daily activity-travel plans using mobile phone application data. Mobile phone application data is a relatively new big data source and captures individuals' broad range of activities over multiple days with extensive population coverage, which is often challenging with conventional data collection methods. The data comprises anonymized geolocation information collected from location-enabled applications in mobile phones. Although the potential of the mobile application data is immense, it also presents significant challenges, including sampling biases, data gaps due to user inactivity, and the absence of socio-demographic variables. 
+This repository contains the scripts (src/) and libraries (lib/) for generating individuals' daily activity-travel plans from mobile phone application data. Mobile phone application data is a relatively new big data source and captures individuals' broad range of activities over multiple days with extensive population coverage, which is often challenging with conventional data collection methods. The data comprises anonymized geolocation information collected from location-enabled applications in mobile phones. Although the potential of the mobile application data is immense, it also presents significant challenges, including sampling biases, data gaps due to user inactivity, and the absence of socio-demographic variables. 
+
+## Steps
+
+| Step | Script/Procedure                                   | Objective                                                                                                         |
+|------|----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| 0    | `src/0-Exploratory-analysis.ipynb'                 | Perform exploratory analysis on the Mobile phone data.                                                            |
+| 1    | `src/1.1-Feature-engineering-close-buildings`      | Clean and prepare the mobile phone data for further analysis.                                                     |
+|      | `src/1.2-Feature-engineering-near-buildings.ipynb` |                                                                                                                   |
+|      | `src/1.3-Feature-engineering-close-buildings`      |                                                                                                                   |
+| 2    | `src/2.1-Survey-data-preparation.ipynb`            | Clean and prepare the travel survey data for further analysis.                                                    |
+|      | `src/2.2-Hourly-activity-frequencies.ipynb`        |                                                                                                                   |
+|      | `src/2.3-Work-participation.ipynb`                 |                                                                                                                   |
+|      | `src/2.4-Survey-distance_new.ipynb`                |                                                                                                                   |
+|      | `src/2.5-Survey-twins_new.ipynb`                   |                                                                                                                   |
+|      | `src/2.6-Preparing-survey-twins-schedules.ipynb`   |                                                                                                                   |
+| 3    | `src/3.1-Home-location-estimation.ipynb`           | Infer home and work activities from  the Mobile phone data.                                                       |
+|      | `src/3.2-Work-School-location-estimation.ipynb`    |                                                                                                                   |
+|      | `src/3.3-Home-Work-School-evaluation.ipynb`        |                                                                                                                   |
+| 4    | `src/4-Individual-weighting_new.ipynb`             | Compute a weight for each individual in the mobile phone data                                                     |
 
 
-
-## 1. Data preparation
-
-## 2. Exploratory Data Analysis
-
-## 3. Generating activity schedules
-
-## 4. Validation
